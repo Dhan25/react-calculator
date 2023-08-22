@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    body {
+        @apply bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900  
+    }
+    .calculator {
+        @apply bg-[#1C1C1C] w-80 mx-auto mt-16 p-4 rounded-lg shadow-lg
+    }
+
+    input {
+        @apply w-full bg-transparent flex text-right py-4 px-5 text-5xl text-white 
+    }
+
+    .buttons {
+        @apply grid grid-cols-4 gap-4 mt-4
+    }
+
+    button {
+        @apply transition duration-200 active:scale-110
+    }
+
+    .number {
+        @apply bg-[#505050] text-white rounded-full p-2 text-2xl
+    }
+
+    .operator {
+        @apply bg-[#FF9500] text-black font-semibold  rounded-full p-4 text-lg
+    }
+}
