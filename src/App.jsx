@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="calculator">
-      <input type="text" value={result} disabled/>
+      <input type="text" value={result} disabled className="border-2 border-white rounded-lg"/>
 
       <div className="buttons">
         <button className="operator bg-[#D4D4D2] font-semibold" onClick={clear}>
